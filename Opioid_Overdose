@@ -2,3 +2,44 @@
 
 Team members. Nhat Thai (A59004446) & Raul Bejarano (A59006248) 
 
+## Question 
+
+What subregional areas in San Diego County are at higher risk of opioid overdose in the future? North America is experiencing a public health crisis due to high levels of fatal overdoses from opioid use (1). In 2019, nearly 50,000 and 4,000 people died from opioid-related overdoses in the United States and Canada, respectively (2,3). This number increased during the COVID-19 epidemic, reaching historic levels in both countries (4). 
+
+Initially, this epidemic was caused by the over-prescription of opioid drugs, which in turn was driven by the economic interests of the pharmaceutical industry (5). Currently, the emergence and availability of new synthetic opioids, such as fentanyl and its derivatives, have exacerbated the epidemic. For example, most opioid-related overdose deaths in the United States involve heroin or fentanyl (6,7). 
+
+The opioid epidemic is still happening. It is time for a population health approach by using machine learning to predict the rates of opioid overdose. Our analysis of county-level variation in opioid overdose is grounded in literature emphasizing the importance of ecological factors on population health and embraces counties as paramount population health units of analysis. The overarching goal of the proposed project is to build a model to predict opioid overdose risks, using US county level data. 
+
+## Background and literature
+
+## Python packages
+arcgis
+pandas 
+geopanas 
+arcgis.geoenrichment
+seaborn
+matplotlib.pyloy
+klearn.model_selection
+sklearn.preprocessing
+sklearn.feature_selection
+
+## Data source
+
+We use emergency department and inpatient discharges to evaluate non-fatal opioid overdoses, as well as death data to evaluate fatal opioid overdoses. The data is compiled by the San Diego County Department of Human Health and Services (DHHS). The codes to identify these cases are provided in the data dictionary by San Diego County DHHS. Opioid Related Disorders | Open Data Portal (sandiegocounty.gov). Other variables included in the model are similarly based on Monnat et al. (2019). Demographic and socioeconomic measures were extracted from the 2019 American Community Survey (ASC), which has already been compiled by San Diego County DHHS. Source: Open Data Portal (sandiegocounty.gov)
+
+## Data cleaning
+
+## Statistics
+
+## Analysis 
+The steps in building the model were as follows: 1) Construct a spatially-enabled data frame where rows represent subregional areas (SRAs), and the columns include variables that affect fatal opioid overdose rates (economic disadvantage, more blue-collar and service employment, higher opioid-prescribing rates)(8), as well as unemployment, number of clinics per 1000,000 population, micropolitan counties, and population younger than 25 years) (9). Some variables were retrieved from the above mentioned sources, and others were obtained through geoenrichment. 2) Explore relationships between the variables, clean up the dataframe, and scale variables. 3) Split the dataset into training and testing data, and perform regression modeling using two machine learning models. 4) Examine the model, keep only the essential variables, and rerun it. 5) Apply the best performing model to the subregions, and produce a map showing the predicted opioid overdose characteristics by these areas. 
+
+## Summary of product and results 
+
+## Discussion 
+
+One evidence-based mechanism for overdose prevention is the community distribution of naloxone. This drug is an effective agent for reversing opioid overdose (18). Naloxone acts as an opioid receptor antagonist or blocker; it is safe, because administration of relatively high doses has no adverse effects; and it has no abuse potential, as it does not produce mood changes or hallucinations (19,20). Naloxone is available in different presentations that differ in dosage, route of administration (injectable, auto-injectable and nasal spray) and cost, with intranasal naloxone being the most suitable for community use. 
+
+## Conslusions and future work
+
+A national overdose prevention strategy should include best practices based on international evidence and the accumulated knowledge of the organizations that have so far carried out this task in the country. A national overdose prevention strategy should be a decentralized exercise, designed from the local regions that experience the problem on a daily basis. As research shows, some of these lessons may include, but are not limited to: 1) creating mechanisms and materials for overdose recording in community settings, forensic medical services, and emergency services; 2) equipping and training with naloxone those most likely to witness an overdose; 3) implementing a free national opioid treatment scheme with medications such as methadone or brupenorphine, substance testing, syringe exchange, and overdose prevention rooms; 4) training programs in harm reduction and occupational health for members of the security forces of the three government levels; and 5) design evidence-based campaigns on substance use and overdose care with naloxone (23-25). 
